@@ -36,3 +36,15 @@ You may demostrate your final funtioning prototype with **one (only)** of the fo
 - Testing, testing and testing. Make sure the prototype is functioning and meeting all the requirements.
 - Do not over engineering. Try to scope your working hour within 3 hours (1 hour per day). You may document all the optimization or technology concern that you think good to bring in the solution.
 - Complete the implementation as clean as possible, clean code is a strong plus point, do not bring in all the fancy tech stuff.
+
+### Arnold's comments
+#### Using the application
+- 1. Running the python project
+    - $ python3 [main.py file path]
+- 2. Order number starting with "V" is VIP order.
+- 3. Order number starting with "N" is normal order.
+
+#### Optimization concerns
+- Instead of killing bot when not need, we can put it to sleep/rest mode. This will reduce overload time of thread creation.
+- Creating multi-dimensional array to manage all type of order under a single list. Easier list management but may consume time to iterate each time.
+- Every cooking bot should complete the last task before going out of scope.
